@@ -11,9 +11,29 @@
     <h1 id="title">Modify the Hello world</h1>
     <p id="description">This is our description</p>
     <form id="survey-form">
-      <input type="text" id="name" required>
-      <input type="email" id="email"  required>
-      <input type="number" id="number">
+      <label id="name-label">Name</label>
+      <input type="text" id="name" placeholder="Enter you Name" required>
+      <label id="email-label">Email</label>
+      <input type="email" id="email" placeholder="Enter your Email" required>
+      <label id="number-label">Number</label>
+      <input type="number" id="number" min="10" max="20" placeholder="Enter your Number">
+      <select id="dropdown" name="cars">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="fiat">Fiat</option>
+          <option value="audi">Audi</option>
+        </select>
+        <p>Please select your gender:</p>
+  <input type="radio" name="gender" value="male"> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other<br> 
+  <input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
+  <input type="checkbox" name="vehicle2" value="Car"> I have a car<br>
+  <input type="checkbox" name="vehicle3" value="Boat" checked> I have a
+  <textarea rows="4" cols="50">
+      </textarea>
+      <input type="submit" id="submit" value="Submit">
+
     </form>
     <!--
 
